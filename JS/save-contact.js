@@ -38,13 +38,15 @@ function downloadVCard() {
   const vCardData = `
 BEGIN:VCARD
 VERSION:3.0
-FN:Ahmad Uzair Chaudhary
+FN:Mariam El Beiruti
 TITLE:Sales Manager
 ORG:RISE Properties
+TEL;TYPE=WORK,VOICE:+971509531017‬
+TEL;TYPE=WORK,VOICE:+971524357563
 TEL;TYPE=WORK,VOICE:+97145665109
-EMAIL:Ahmed.Uzair@riseproperties.ae
+EMAIL:Mariam@riseproperties.ae
 URL:http://www.riseproperties.ae
-ADR;TYPE=WORK:;;PO Box No 455979, Office NO.1607, Opal Tower, Business Bay;Dubai;;UAE
+ADR;TYPE=WORK:;;PO Box No 181702, Office NO.1607, Opal Tower, Business Bay;Dubai;;UAE
 END:VCARD
   `.trim();
 
@@ -53,7 +55,7 @@ END:VCARD
 
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'Ahmad Uzair Chaudhary.vcf';
+  a.download = 'Mariam El Beiruti.vcf';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
